@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!--为ClickPreference custom attribute-->
+<resources>  
+    <declare-styleable name="MyView">  
+        <attr name="textColor" format="color" />  
+        <attr name="textSize" format="dimension" />  
+    </declare-styleable>  
+</resources> 

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:umadsdk="http://schemas.android.com/apk/res/com.LoveBus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mi_se"
+    android:orientation="vertical"
+    android:layout_marginTop="0dp" >
+				
+    <LinearLayout 
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/mainactivity_blue_1"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+        
+       <FrameLayout
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1.5"
+	        android:gravity="center_vertical|center_horizontal">
+	        
+           <Button      
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_map_button"/>
+           
+           <ImageView 
+          	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+        	android:background="@drawable/triangle"/>
+    	</FrameLayout>
+    	
+    	<FrameLayout
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="4"
+	        android:layout_marginLeft="1dp"
+	        android:layout_marginRight="1dp"
+	        android:orientation="horizontal"
+	        android:background="@drawable/selector_map_button">
+    	    
+    	<TextView    
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="WEITIAN"
+            android:textSize="18dp"
+   			android:textColor="@color/white_start"
+    		android:textStyle="bold"/>
+    	</FrameLayout>
+       
+        <Button
+            android:id="@+id/mapButton"        
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="MAP"
+            android:textSize="18dp"
+   			android:textColor="@color/white_start"
+    		android:textStyle="bold"
+            android:background="@drawable/selector_map_button"/>
+    </LinearLayout>
+    
+    <EditText
+	android:singleLine="false"
+	android:id="@+id/weibosdk_etEdit"
+	android:layout_width="fill_parent"
+	android:layout_height="60dp"
+	android:background="@null"
+	android:capitalize="sentences"
+	android:imeOptions="actionDone"
+	android:gravity="top|left"
+	android:isScrollContainer="true"
+	android:layout_margin="3px"/>
+     
+    <RelativeLayout
+		android:id="@+id/weibosdk_rlTotal"
+		android:layout_width="fill_parent"
+		android:layout_height="50dip"
+		android:layout_weight="1">
+				
+        <ImageView 
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/weibosdk_ll_text_limit_unit"
+            android:background="@drawable/text"
+            android:focusable="true"
+			android:clickable="true"
+			android:layout_alignParentBottom="false"
+			android:layout_marginRight="5dip"/>
+        
+			<LinearLayout
+				android:id="@+id/weibosdk_ll_text_limit_unit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:gravity="center"
+				android:background="@drawable/weibosdk_bg_delwords"
+				android:focusable="true"
+				android:clickable="true" 
+				android:layout_alignParentBottom="false">
+					
+			<TextView
+				android:id="@+id/weibosdk_tv_text_limit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="140"
+				android:layout_marginRight="5px"
+				android:textColor="#333"/>
+					
+			<ImageView
+				android:src="@drawable/weibosdk_icon_delwords"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+					
+		</LinearLayout>
+				
+	</RelativeLayout>
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:gravity="center_horizontal|center_vertical">
+        
+        <LinearLayout 
+        android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center_horizontal|center_vertical">
+         <ImageView 
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_insert_location_nor"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+        android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center_horizontal|center_vertical">
+         <ImageView 
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_insert_pic_nor"/>
+         </LinearLayout>
+         
+        <LinearLayout 
+        android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center_horizontal|center_vertical">
+         <ImageView 
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_insert_topic_nor"/>
+         </LinearLayout>
+         
+        <LinearLayout 
+        android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center_horizontal|center_vertical">
+         <ImageView 
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_insert_at_nor"/>
+         </LinearLayout>
+         
+        <LinearLayout 
+        android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center_horizontal|center_vertical">
+         <ImageView 
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_insert_face_nor"/>
+         </LinearLayout>
+         
+    </LinearLayout>	
+	
+	
+</LinearLayout>

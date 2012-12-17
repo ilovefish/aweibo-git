@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weitian"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:name=".Weitian"
+        android:icon="@drawable/blank_boy"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".WeiboActivity" >
+        </activity>
+        
+        <activity 
+            android:name="com.weibo.AddFriendsByUserInputActivity"
+			android:label="@string/add_friends_activity_label"> 
+			<intent-filter>
+				<action android:name="com.joelapenna.foursquared.intent.action.LOGGED_OUT" />
+			</intent-filter>
+		</activity>
+            
+        <activity 
+            android:name=".WeiboLogin"
+            android:launchMode="singleInstance"
+			android:label="@string/add_friends_activity_label"	
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">	 
+		</activity>
+		
+        <activity 
+            android:name=".MainActivity"
+			android:label="@string/app_name"
+			android:theme="@style/Theme.IOSched"><!-- 标题栏下没有阴影  -->			 
+			<intent-filter >
+        		<action android:name="android.intent.action.MAIN" />
+            	<category android:name="android.intent.category.LAUNCHER" />
+        	</intent-filter>	
+		</activity>
+		  
+        <activity 
+            android:name=".WeiboPreferenceActivity"
+            android:label="@string/WeiboPreferenceActivity">
+        </activity>
+      
+        <activity 
+            android:name=".newsActivity" 
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CustomDialog"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+            <!--  android:theme="@android:style/Theme.Dialog"  
+             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
+            
+        <activity 
+            android:name=".AnswerShowDialog"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>    
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+	<uses-permission android:name="android.permission."/>
+	    
+	
+</manifest>

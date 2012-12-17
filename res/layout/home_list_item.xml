@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:paddingTop="10dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingBottom="25dip">
+    <!--  android:descendantFocusability="blocksDescendants" -->
+    <TextView 
+	        android:id="@+id/created_at"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBottom="@+id/relativeLayout2"
+	        android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+	        android:textSize="14dip"
+	        android:text="10-29 19：55"
+	        android:paddingTop="2dip"
+		    android:paddingLeft="6dip"
+		    android:paddingRight="6dip"
+		    android:paddingBottom="2dip"
+		    android:layout_marginRight="1dip"
+		    android:layout_gravity="right"
+		    android:gravity="center_horizontal|center_vertical"/>
+     
+    
+	<RelativeLayout
+	    android:id="@+id/relativeLayout2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="4dip"
+	    android:layout_marginRight="1dip"
+	    android:layout_marginLeft="1dip"
+		android:background="@drawable/bump_dialog_card_bg"
+		android:paddingTop="0dip"
+		android:paddingLeft="5dip"
+		android:paddingRight="0dip"
+		android:paddingBottom="2dip"
+	    android:isScrollContainer="false">
+
+	    <ImageView 
+	        android:id="@+id/profileImageView"
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:layout_alignParentLeft="true"
+	   		android:layout_alignParentTop="true"
+	   		android:paddingTop="0dip"
+		    android:paddingLeft="0dip"
+		    android:paddingRight="0dip"
+		    android:paddingBottom="0dip"
+		    android:layout_marginRight="4dip"/>
+	
+	    <TextView 
+	        android:id="@+id/screenName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/profileImageView"
+	        style="@style/title_script"
+	        android:paddingTop="0dip"
+	        android:paddingRight="8dip"/>
+	    
+	     <TextView 
+	        android:id="@+id/location"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/screenName"
+	        android:layout_toRightOf="@+id/profileImageView"
+	        android:typeface="monospace"
+	        android:textColor="@color/dgrey_end"
+	        android:text="上海"
+	        android:paddingRight="8dip"/>
+	     
+	</RelativeLayout>
+	
+
+	<TextView
+	     android:id="@+id/text"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     style="@style/text_script"
+	     android:lineSpacingExtra="6dip"
+	     android:layout_marginRight="1dip"
+	     android:layout_marginLeft="1dip"
+	     android:layout_marginTop="4dip"
+	     android:paddingTop="6dip"
+		 android:paddingLeft="5dip"
+		 android:paddingRight="5dip"
+		 android:paddingBottom="6dip"
+		 android:background="@drawable/bump_dialog_card_bg"/>
+
+	<ImageView
+	    android:id="@+id/picImageView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="1dip"
+	    android:layout_marginRight="1dip"
+	    android:layout_marginTop="4dip"
+	    android:layout_gravity="right"
+	    android:scaleType="fitCenter"
+	    android:src="@drawable/webview_refresh"
+	    android:clickable="true"
+	    android:focusable="true"/>  
+
+
+		 <ImageView
+		    android:id="@+id/imageView"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginLeft="30dp"
+	        android:scaleType="centerCrop"
+	        android:background="@drawable/actionbar_arrow_right_off">
+		     
+		 </ImageView>
+	     <RelativeLayout
+	    android:id="@+id/relativeLayout3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="left"
+	    android:background="@drawable/bump_dialog_card_bg_mi_huang"
+	    android:paddingLeft="5dip"
+	    android:paddingBottom="2dip"
+	    android:layout_marginTop="0dip"
+	    android:layout_marginRight="1dip"
+	    android:isScrollContainer="false"
+	    android:layout_marginLeft="30dp" >
+		
+	   
+	    <ImageView 
+	        android:id="@+id/retweetedprofileImageView"
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:layout_alignParentLeft="true"
+	   		android:layout_alignParentTop="true"
+	   		android:paddingTop="0dip"
+		    android:paddingLeft="0dip"
+		    android:paddingRight="0dip"
+		    android:paddingBottom="0dip"
+		    android:layout_marginRight="4dip"
+		    android:layout_marginLeft="0dp"/>
+	
+	    <TextView 
+	        android:id="@+id/retweetedscreenName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/retweetedprofileImageView"
+	        android:textAppearance="@android:style/TextAppearance.Medium"
+	        android:text="笑笑如春山"
+	        android:textColor="@color/dgrey_end"
+	        android:paddingTop="0dip"
+	        android:paddingRight="8dip"/>
+	    
+	     <TextView 
+	        android:id="@+id/retweetedlocation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/retweetedscreenName"
+	        android:layout_toRightOf="@+id/retweetedprofileImageView"
+	        android:typeface="monospace"
+	        android:textColor="@color/dgrey_end"
+	        android:text="上海"
+	        android:paddingRight="8dip"/>
+	    
+	</RelativeLayout>
+	     
+	     <LinearLayout 
+	         android:id="@+id/retewweeted_repeat_discuss"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="30dip"
+	         android:layout_marginRight="1dip"
+	         android:orientation="vertical"
+	         android:background="@drawable/bump_dialog_card_bg_mi_huang">
+	         <TextView
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:id="@+id/retweetedTextView"
+	         android:lineSpacingExtra="6dip"
+	         android:paddingBottom="6dip"
+	         android:paddingLeft="5dip"
+	         android:paddingRight="0dip"
+	         android:paddingTop="6dip"
+	         android:layout_marginTop="4dip"
+	         style="@style/text_script"/>
+	         
+	    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="4dp"
+	    android:layout_marginBottom="4dp">
+	    
+	    <TextView
+	     android:id="@+id/retweeted_repeat_TextView"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:text="@string/zhuanfa"
+	     android:textSize="14dip"
+	     android:textColor="@color/grey_1"
+	     android:maxLines="1"
+	     android:gravity="left|center_vertical"
+	     android:paddingLeft="5dp"
+	     android:paddingTop="1dp"
+	     android:paddingRight="10dp"
+	     android:paddingBottom="1dp"
+	     android:layout_margin="1dp"
+	     android:layout_alignParentLeft="true"
+	     android:layout_centerHorizontal="true"
+		 android:layout_centerVertical="true"
+		 android:background="@drawable/selector_textview"
+		 android:clickable="true"
+		 android:focusable="true"/>
+	    
+	    <TextView
+	     android:id="@+id/retweeted_discuss_TextView"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:text="@string/pinglun"
+	     android:textSize="14dip"
+	     android:textColor="@color/grey_1"
+	     android:maxLines="1"
+	     android:gravity="left|center_vertical"
+	     android:paddingLeft="5dp"
+	     android:paddingTop="1dp"
+	     android:paddingRight="10dp"
+	     android:paddingBottom="1dp"
+	     android:layout_margin="1dp"
+	     android:layout_toRightOf="@+id/retweeted_repeat_TextView"
+	     android:layout_alignParentTop="false"
+	     android:layout_centerHorizontal="true"
+		 android:layout_centerVertical="true"
+		 android:background="@drawable/selector_textview"
+		 android:clickable="true"
+		 android:focusable="true"/>
+
+			    <TextView
+			        android:id="@+id/retweeted_repeat_num"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="5px"
+			        android:text="140"
+			        android:textColor="#333" 
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:clickable="true"
+			   		android:focusable="true"/>
+
+			    <ImageView
+			        android:layout_width="15dip"
+			        android:layout_height="15dip"
+			        android:layout_alignBottom="@+id/retweeted_repeat_num"
+			        android:layout_toLeftOf="@+id/retweeted_repeat_num"
+			        android:src="@drawable/attitude_laugh2" />
+
+			</RelativeLayout>	
+	        		
+	     </LinearLayout>
+	     
+	     
+		
+	     <ImageView
+	         android:id="@+id/retweetedPicImageView"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="1dip"
+	         android:layout_marginRight="1dip"
+	         android:layout_marginTop="4dip"
+	         android:scaleType="fitEnd"
+	         android:layout_gravity="right" 
+	         android:focusable="true"
+	         android:clickable="true"/>
+
+	
+	<LinearLayout 
+	    android:id="@+id/linearLayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="4dp">
+	      
+	    <TextView  
+	     android:id="@+id/beforeTimeText"
+	     android:layout_width="0dp"
+	     android:layout_height="fill_parent"
+	     android:layout_weight="4"
+	     android:text="1小时前"
+	     android:textSize="14dip"
+	     android:textColor="@color/black_end"
+	     android:background="@drawable/bump_dialog_card_bg_blue2"
+	     android:maxLines="1"
+	     android:gravity="center_vertical"
+	     android:paddingLeft="5dp"
+	     android:paddingTop="1dp"
+	     android:paddingRight="1dp"
+	     android:paddingBottom="1dp"
+	     android:layout_margin="1dp"/>
+	      
+	    <LinearLayout 
+	     android:layout_width="0dp"
+	     android:layout_height="wrap_content"
+	     android:layout_weight="1"
+	     android:background="@drawable/bump_dialog_card_bg_blue2"
+	     android:gravity="center_vertical|center_horizontal"
+	     android:layout_marginTop="1dp"
+	     android:layout_marginRight="0dp"
+	     android:layout_marginBottom="1dp"
+	     android:layout_marginLeft="1dp">
+	     
+	     <Button
+	         android:id="@+id/ButtonBox"
+	         android:background="@drawable/selector_check_button"
+	         android:layout_width="27dip"
+	         android:layout_height="27dip"
+	         android:gravity="center_horizontal|center_vertical"/>
+
+	    </LinearLayout>
+	   
+	</LinearLayout>
+
+	<RelativeLayout
+	    android:id="@+id/discuss_repeat"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="4dp">
+	    
+	    <TextView
+	     android:id="@+id/repeat_TextView"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:text="@string/zhuanfa"
+	     android:textSize="14dip"
+	     android:textColor="@color/grey_1"
+	     android:maxLines="1"
+	     android:gravity="left|center_vertical"
+	     android:paddingLeft="5dp"
+	     android:paddingTop="1dp"
+	     android:paddingRight="10dp"
+	     android:paddingBottom="1dp"
+	     android:layout_margin="1dp"
+	     android:layout_alignParentLeft="true"
+	     android:layout_centerHorizontal="true"
+		 android:layout_centerVertical="true"
+		 android:background="@drawable/selector_textview"
+		 android:clickable="true"
+		 android:focusable="true"/>
+	    
+	    <TextView
+	     android:id="@+id/discuss_TextView"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:text="@string/pinglun"
+	     android:textSize="14dip"
+	     android:textColor="@color/grey_1"
+	     android:maxLines="1"
+	     android:gravity="left|center_vertical"
+	     android:paddingLeft="5dp"
+	     android:paddingTop="1dp"
+	     android:paddingRight="10dp"
+	     android:paddingBottom="1dp"
+	     android:layout_margin="1dp"
+	     android:layout_toRightOf="@+id/repeat_TextView"
+	     android:layout_alignParentTop="false"
+	     android:layout_centerHorizontal="true"
+		 android:layout_centerVertical="true"
+		 android:background="@drawable/selector_textview"
+		 android:clickable="true"
+		 android:focusable="true"/>
+
+
+			    <ImageView
+			        android:layout_width="15dip"
+			        android:layout_height="15dip"
+			        android:layout_alignBottom="@+id/repeat_num"
+			        android:layout_toLeftOf="@+id/repeat_num"
+			        android:src="@drawable/attitude_laugh2" />
+			    
+			    <TextView
+			        android:id="@+id/repeat_num"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="5px"
+			        android:text="140"
+			        android:textColor="#333" 
+			        android:clickable="true"
+			   		android:focusable="true"
+			   		android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"/>
+	</RelativeLayout>
+</LinearLayout>

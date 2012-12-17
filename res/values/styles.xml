@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    
+   <style name="list_view_style">
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdgeLength">0dip</item>
+        <item name="android:cacheColorHint">@color/mi_se_center</item>
+        <item name="android:background">@color/mi_se_center</item>
+        <item name="android:divider">@color/white_center</item>
+        <item name="android:dividerHeight">1dip</item>
+   </style> 
+   <style name="text_script">
+	   <item name="android:textAppearance">@android:style/TextAppearance.Small</item>
+	   <item name="android:textSize">16sp</item>
+	   <item name="android:textColor">@color/black_end</item>
+   </style> 
+   <style name="title_script">
+       <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+       <item name="android:textColor">@color/dgrey_end</item>
+   </style>
+    
+   <style name="list_item_title">
+       <item name="android:background">@drawable/bump_dialog_card_bg_mi_huang</item>
+       <item name="android:isScrollContainer">false</item>
+   </style> 
+   
+   <style name="Theme.CustomDialog" parent="android:style/Theme.Dialog">
+	  <item name="android:windowNoTitle">true</item>
+	  <item name="android:textColor">#FFFFFF</item>
+	  <item name="android:textSize">15sp</item>
+	  <item name="android:paddingBottom">0dip</item>
+	  <item name="android:paddingLeft">0dip</item>
+	  <item name="android:paddingRight">0dip</item>
+	  <item name="android:paddingTop">0dip</item>
+   </style>
+   
+   <style name="mainheader">
+    	<item name="android:layout_height">50dp</item>
+   </style>
+   
+   <style name="TextMainHeader">
+    	<item name="android:textSize">18dip</item>
+   		<item name="android:textColor">@color/white_start</item>
+    	<item name="android:textStyle">bold</item>
+   </style>
+   
+   <style name="Theme.IOSched" parent="android:style/Theme.Light">
+    	<item name="android:windowNoTitle">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+   </style> 
+   
+   <style name="Theme.WhiteProgressBar" parent="@android:style/Widget.ProgressBar.Large">
+    	<item name="android:startColor">#FFFFFF</item>
+    	<item name="android:startColor">#00FFFF</item>
+   </style>
+   
+   <style name="Theme.BlueProgressBar" parent="@android:style/Widget.ProgressBar.Large">
+    	<item name="android:startColor">#FF1D5583</item>
+    	<item name="android:endColor">#001D5583</item>
+   </style>
+       
+   <style name="home_list_item_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+       <item name="android:button">@drawable/selector_home_list_item_checkbox</item>
+       <item name="android:paddingLeft">0dip</item>
+       <item name="android:paddingRight">0dip</item>
+       <item name="android:paddingTop">0dip</item>
+       <item name="android:paddingBottom">0dip</item>
+       <item name="android:scaleType">fitCenter</item>
+   </style>
+   
+   <style name="home_list_item_checkbox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+       <item name="android:button">@drawable/selector_home_list_item_checkbox2</item>
+       <item name="android:paddingLeft">0dip</item>
+       <item name="android:paddingRight">0dip</item>
+       <item name="android:paddingTop">0dip</item>
+       <item name="android:paddingBottom">0dip</item>
+       <item name="android:maxHeight">10.0dip</item>
+       <item name="android:maxWidth">10.0dip</item>
+       <item name="android:scaleType">center</item>
+   </style>    
+       
+   <style name="weibosdk_ContentOverlay" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@color/weibosdk_transparent</item><!-- 背景色透明 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item><!-- 内容上的覆盖物 --> 
+        <item name="android:backgroundDimEnabled">true</item><!-- 背景的内容是否显示成暗色 -->
+        <item name="android:windowFullscreen">true</item >       
+       
+	</style>
+</resources>

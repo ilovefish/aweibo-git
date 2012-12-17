@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout3"
+            >
+            <TextView 
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="780dp"
+            android:background="#f0fff000" 
+            android:layout_alignParentBottom="true">
+
+			 <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="222"
+                />
+        </RelativeLayout>
+      
+    </RelativeLayout>
+    
+    <!-- //        setContentView(R.layout.activitytext);
+        DisplayMetrics dm = new DisplayMetrics();  
+        getWindowManager().getDefaultDisplay().getMetrics(dm);  
+        String strOpt = "手机屏幕分辨率："+dm.widthPixels + "x" + dm.heightPixels; 
+        heightPixels = dm.heightPixels;
+        RelativeLayout.LayoutParams  params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT, heightPixels-100);
+        params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, -1);
+        mTextView = (TextView) this.findViewById(R.id.textview);
+        mRelativeLayout = (RelativeLayout) this.findViewById(R.id.relativeLayout3);
+        mRelativeLayout.setLayoutParams(params);
+
+int heightPixels = 0;
+    int lastY = 0;
+    RelativeLayout mRelativeLayout;
+    TextView mTextView;
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		// TODO Auto-generated method stub
+		//int y = (int) event.getY();
+		switch (event.getAction()) {
+		case MotionEvent.ACTION_DOWN:
+			lastY = (int) event.getY();
+			break;
+		case MotionEvent.ACTION_MOVE:
+			int newY = (int) event.getY();
+			int distance = newY - lastY;
+			RelativeLayout.LayoutParams  params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT, heightPixels-distance);
+	        params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, -1);
+	        mRelativeLayout.setLayoutParams(params);
+	        mTextView.setText("1111");
+			break;
+		default:
+			break;
+		}
+		RelativeLayout r = (RelativeLayout) this.findViewById(R.id.relativeLayout3);
+		return super.onTouchEvent(event);
+	}
+
+
+ -->

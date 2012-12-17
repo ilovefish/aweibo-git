@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.weitian.widget.PullRefreshFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+  		xmlns:weitian="http://schemas.android.com/apk/res/com.weitian"
+        android:id="@+id/pull_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/mi_se_center"
+        weitian:actionViewId="@id/action_view"
+       	weitian:toolViewId="@id/tool_view"
+       	android:scrollbars="vertical"
+       	android:focusable="true"
+       	android:clickable="true">
+       	
+        <include android:id="@id/action_view"
+            layout="@layout/pull_to_refresh_listview_head"/>
+        
+        <ListView 
+            android:id="@id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+	    	android:scrollbars="vertical"
+	   		android:fadingEdgeLength="0dip"
+            android:cacheColorHint="@color/mi_se_center"
+	    	android:background="@color/mi_se_center"
+       		android:divider="@color/white_center"
+       		android:dividerHeight="1dip"
+       		android:focusable="true"
+       		android:clickable="true">
+            
+        </ListView>
+        
+    </com.weitian.widget.PullRefreshFrameLayout>

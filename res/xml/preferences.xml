@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:test1="http://schemas.android.com/apk/res/com.weitian">
+  <!--custom name space:test:跟着declare-styleable定义的属性-->
+    <com.weitian.preference.ClickPreference
+      android:key="friend_add"
+      android:title="@string/preferences_friend_add_title"
+      android:summary="@string/preferences_friend_add_summary"
+      test1:textSize="20px"  
+      test1:textColor="#000"
+      />
+    <com.weitian.preference.ClickPreference
+      android:key="friend_requests"
+      android:title="@string/preferences_friend_requests_title"
+      android:summary="@string/preferences_friend_requests_summary" />
+</PreferenceScreen>

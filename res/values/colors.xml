@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!-- Copyright (C) 2007 The Android Open Source Project -->
+  
+<resources>
+    <color 
+        name = "me_huang2">#FFFAFAED</color>
+    <color 
+        name = "me_huang">#FFEEEBCA</color>
+    <color 
+        name = "hui_kafei">#FFC1B4A4</color>
+    <color 
+        name = "shenhui_kafei">#FF957D64</color>
+    <color 
+        name = "mi_se">#FFDFD7D7</color>
+    <color 
+        name = "mi_se_center">#FFE9E0E4</color>
+    <color 
+        name = "mainactivity_blue_1">#FF114674</color>
+    <color
+        name="white_start">#fff</color>
+    <color
+        name="white_start1">#fafafa</color>
+    <color
+        name="white_center">#EBEBEB</color>
+    <color
+        name="white_end">#DCDCDC</color>
+    <color
+        name="purple_start">#9b256b</color>
+    <color
+        name="purple_end">#5d2761</color>
+        
+    <!-- 427BBA, 0f93b8 -->
+    <color
+        name="blue_start2">#CAF5FF</color>
+    <color
+        name="blue_start">#0f93b8</color>
+    <color
+        name="blue_end">#0f93b8</color>
+    <color
+        name="lgrey_start">#BFC0C0</color>
+    <color
+        name="lgrey_end">#AEB2B7</color>
+    <color
+        name="dgrey_start">#4E4F50</color>
+    <color
+        name="dgrey_end">#2C3137</color>
+    <color
+        name="item_grey_start">#B4B8BA</color>
+    <color
+        name="item_grey_end">#62707C</color>
+    <color
+        name="black_start">#333333</color>
+    <color
+        name="black_end">#181818</color>
+    <color
+        name="grey_start">#CBCBCB</color>
+    <color
+        name="grey_1">#A0A0A0</color>
+    <color
+        name="grey_end">#8C9DAE</color>
+    <color
+        name="blue_badges_mayor">#095b72</color>
+    <color
+        name="vlgrey">#EEEEEE</color>
+    <color
+        name="color_score_list_adapter_highlight">#EEEEEE</color>
+    <color
+        name="color_score_mayor_section_background">#DDDDDD</color>
+    <color 
+        name="color_bright_green">#a6da00</color>
+    <color
+        name="tip_detail_actions_background">#c7c7c7</color>
+    <color
+        name="user_details_activity_general">#FF555555</color>
+    <color
+        name="transparent">#00000000</color>
+     <color
+        name="blacktransparent">#22000000</color>
+
+        
+</resources>

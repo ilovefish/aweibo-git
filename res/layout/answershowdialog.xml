@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:umadsdk="http://schemas.android.com/apk/res/com.LoveBus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mi_se"
+    android:orientation="vertical"
+    android:layout_marginTop="0dp" >
+				
+    <LinearLayout 
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/mainactivity_blue_1"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+        
+       <FrameLayout
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1.5"
+	        android:gravity="center_vertical|center_horizontal">
+	        
+           <Button      
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_map_button"/>
+           
+           <ImageView 
+          	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+        	android:background="@drawable/toolbar_forward_icon_nor"/>
+    	</FrameLayout>
+    	
+    	<FrameLayout
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="4"
+	        android:layout_marginLeft="1dp"
+	        android:layout_marginRight="1dp"
+	        android:orientation="horizontal"
+	        android:background="@drawable/selector_map_button">
+    	    
+    	<TextView    
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="WEITIAN"
+            android:textSize="18dp"
+   			android:textColor="@color/white_start"
+    		android:textStyle="bold"/>
+    	</FrameLayout>
+       
+        <FrameLayout
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="0dp"
+	        android:layout_marginRight="1dp"
+	        android:orientation="horizontal"
+	        android:background="@drawable/selector_map_button">
+    	    
+    	<Button
+    	    android:id="@+id/refurbishImageViewButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/selector_map_button"/>
+    	
+    	<ImageView 
+    	    android:id="@+id/refurbishImageView"
+    	    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" 
+            android:scaleType="center"
+            android:background="@drawable/webview_refresh"/>
+
+    	<ProgressBar
+    	    android:id="@+id/refurbishImageViewProgressBar"
+    	    android:visibility="gone"
+    	    android:layout_width="25dp"
+    	    android:layout_height="25dp"
+    	    android:layout_gravity="center_vertical|center_horizontal" 
+    	    style="@style/Theme.BlueProgressBar"/>
+    	
+    	</FrameLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:background="@color/mi_se">
+
+    <com.weitian.BaseListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/list_view_style">
+        
+    </com.weitian.BaseListView>
+    </LinearLayout>  
+</LinearLayout>
